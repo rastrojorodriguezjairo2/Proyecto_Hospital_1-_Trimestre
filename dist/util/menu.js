@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calcular = exports.emplear = exports.atender = exports.menu = void 0;
+exports.emplear = exports.atender = exports.menu = void 0;
 const entradaTeclado_1 = require("./entradaTeclado");
 let menu = () => __awaiter(void 0, void 0, void 0, function* () {
     let menu1;
@@ -43,12 +43,3 @@ let emplear = () => __awaiter(void 0, void 0, void 0, function* () {
     return menu3;
 });
 exports.emplear = emplear;
-let calcular = () => __awaiter(void 0, void 0, void 0, function* () {
-    let menu4;
-    console.log('1.-Calcular Salarios');
-    console.log('2.-Calcular Ganancias');
-    console.log('3.-Salir');
-    menu4 = parseInt(yield (0, entradaTeclado_1.leerTeclado)('Opción: '));
-    return menu4;
-});
-exports.calcular = calcular;

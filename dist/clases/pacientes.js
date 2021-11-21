@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Paciente = void 0;
 class Paciente {
-    constructor(id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, preciobase) {
+    constructor(id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, tipo, preciobase) {
         this._id = id;
         this._nombre = nombre;
         this._apellido1 = apellido1;
@@ -12,6 +12,7 @@ class Paciente {
         this._seguro = seguro;
         this._telefono = telefono;
         this._dolencia = dolencia;
+        this._tipo = tipo;
         this._preciobase = preciobase;
     }
     get id() {
@@ -41,6 +42,9 @@ class Paciente {
     get dolencia() {
         return this._dolencia;
     }
+    get tipo() {
+        return this._tipo;
+    }
     get preciobase() {
         return this._preciobase;
     }
@@ -55,7 +59,7 @@ class Paciente {
         return pago;
     }
     todo() {
-        return `id: ${this._id},Nombre${this._nombre},Apellido1${this._apellido1},Apellido2${this._apellido2},Edad${this._edad}, DNI${this._dni},Seguro${this._seguro},Telefono${this._telefono},Dolencia${this._dolencia}, Precio base: ${this._preciobase}`;
+        return `id: ${this._id},Nombre${this._nombre},Apellido1${this._apellido1},Apellido2${this._apellido2},Edad${this._edad}, DNI${this._dni},Seguro${this._seguro},Telefono${this._telefono},Dolencia${this._dolencia},Tipo${this._tipo},Precio base: ${this._preciobase}`;
     }
 }
 exports.Paciente = Paciente;

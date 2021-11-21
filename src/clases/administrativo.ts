@@ -3,8 +3,8 @@ import {Paciente} from "./pacientes";
 
 export class Administrativo extends Empleado{
     private _segundoIdioma: string;
-    constructor(idemp:number, nombreemp:string, apellido:string, contacto: number,segundoIdioma: string, sueldo:number ){
-        super (idemp, nombreemp, apellido, contacto, sueldo)
+    constructor(id:number, nombreemp:string, apellido:string, contacto: number, puesto: string, segundoIdioma: string, sueldo:number ){
+        super (id, nombreemp, apellido, contacto, puesto, sueldo)
         this._segundoIdioma = segundoIdioma;
     }
     get idioma(){

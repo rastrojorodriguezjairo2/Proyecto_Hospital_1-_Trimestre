@@ -1,19 +1,22 @@
 import {Empleado} from "./empleados";
 import { Paciente } from "./pacientes";
 
-export class Medicos extends Empleado{
+export class Medico extends Empleado{
     private _especialidad: string;
     private _idpaciente: Array<Paciente>;
-    constructor(idemp:number, nombreemp:string, apellido:string, contacto: number, idpaciente:Array<Paciente>, especialidad:string, sueldo:number){
-    super (idemp, nombreemp, apellido, contacto, sueldo)
+    constructor(id:number, nombreemp:string, apellido:string, contacto: number, puesto:string, especialidad:string, sueldo:number){
+    super (id, nombreemp, apellido, contacto, puesto, sueldo)
     this._especialidad = especialidad
-    this._idpaciente = idpaciente
+    this._idpaciente = new Array<Paciente>()
     }
     get sueldo (){
         return this._sueldo
     }
     get especialidad (){
         return this._especialidad
+    }
+    get idpaciente() {
+        return this._idpaciente
     }
 
     salario(){

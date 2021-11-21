@@ -3,8 +3,8 @@ import { Empleado} from "./empleados";
 
 export class Urgencias extends Paciente {
     private _prueba: string;
-    constructor(id: number, nombre: string, apellido1: string, apellido2:string, edad: number, dni: string, seguro: boolean, telefono: number, dolencia: string, prueba: string, preciobase: number){
-    super (id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, preciobase)
+    constructor(id: number, nombre: string, apellido1: string, apellido2:string, edad: number, dni: string, seguro: boolean, telefono: number, dolencia: string, prueba: string, tipo: string, preciobase: number){
+    super (id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, tipo, preciobase)
     this._prueba = prueba;
     }
     get prueba(){

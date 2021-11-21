@@ -28,6 +28,9 @@ const pacienteSchema = new Schema({
     _dolencia: {
         type: String
       },
+    _tipo: {
+      type: String
+    },
      _preciobase: {
         type: Number
       },
@@ -49,6 +52,7 @@ export type pacien={
     _seguro: boolean | null,
     _telefono: number | null,
     _dolencia: string | null,
+    _tipo: string | null,
     _preciobase: number | null
 }
 
@@ -62,6 +66,7 @@ export type paciUrgencias = {
     _seguro: boolean | null,
     _telefono: number | null,
     _dolencia: string | null,
+    _tipo: string | null,
     _prueba: string | null,
     _preciobase: number | null
 }
@@ -76,6 +81,7 @@ export type paciCovid = {
     _seguro: boolean | null,
     _telefono: number | null,
     _dolencia: string | null,
+    _tipo: string | null,
     _test: string | null,
     _preciobase: number | null
 }

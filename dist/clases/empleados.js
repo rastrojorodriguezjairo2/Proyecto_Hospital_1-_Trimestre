@@ -2,16 +2,16 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Empleado = void 0;
 class Empleado {
-    constructor(idemp, nombreemp, apellido, contacto, idpaciente, sueldo) {
-        this._idemp = idemp;
+    constructor(id, nombreemp, apellido, contacto, puesto, sueldo) {
+        this._id = id;
         this._nombreemp = nombreemp;
         this._apellido = apellido;
         this._contacto = contacto;
+        this._puesto = puesto;
         this._sueldo = sueldo;
-        this._idpaciente = idpaciente;
     }
-    get idemp() {
-        return this._idemp;
+    get id() {
+        return this._id;
     }
     get nombreemp() {
         return this._nombreemp;
@@ -22,8 +22,8 @@ class Empleado {
     get contacto() {
         return this._contacto;
     }
-    get idpaciente() {
-        return this._idpaciente;
+    get puesto() {
+        return this._puesto;
     }
     get sueldo() {
         return this._sueldo;
@@ -34,7 +34,7 @@ class Empleado {
         salario = 1150;
     }
     todo() {
-        return `IdEmpleado: ${this._idemp},Nombre${this._nombreemp},Apellido${this._apellido},Telefono${this._contacto} Sueldo: ${this._sueldo}`;
+        return `IdEmpleado: ${this._id},Nombre${this._nombreemp},Apellido${this._apellido},Telefono${this._contacto} Sueldo: ${this._sueldo}`;
     }
 }
 exports.Empleado = Empleado;

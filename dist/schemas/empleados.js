@@ -15,6 +15,9 @@ const empleSchema = new mongoose_1.Schema({
     _contacto: {
         type: Number
     },
+    _puesto: {
+        type: String
+    },
     _idpaciente: {
         type: Array
     },
@@ -24,7 +27,7 @@ const empleSchema = new mongoose_1.Schema({
     _especialidad: {
         type: String
     },
-    _idiomas: {
+    _segundoIdioma: {
         type: String
     }
 });

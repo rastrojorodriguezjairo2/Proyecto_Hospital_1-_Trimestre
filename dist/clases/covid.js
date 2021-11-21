@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Covid = void 0;
 const pacientes_1 = require("./pacientes");
 class Covid extends pacientes_1.Paciente {
-    constructor(id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, preciobase, test) {
-        super(id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, preciobase);
+    constructor(id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, tipo, test, preciobase) {
+        super(id, nombre, apellido1, apellido2, edad, dni, seguro, telefono, dolencia, tipo, preciobase);
         this._test = test;
     }
     get test() {

@@ -9,8 +9,9 @@ export class Paciente {
     protected _seguro: boolean;
     private _telefono: number;
     private _dolencia: string;
+    private _tipo: string;
     protected _preciobase: number;
-constructor(id: number, nombre: string, apellido1: string, apellido2:string, edad: number, dni: string, seguro: boolean, telefono: number, dolencia: string, preciobase: number){
+constructor(id: number, nombre: string, apellido1: string, apellido2:string, edad: number, dni: string, seguro: boolean, telefono: number, dolencia: string, tipo:string, preciobase: number){
     this._id = id;
     this._nombre = nombre;
     this._apellido1 = apellido1;
@@ -20,6 +21,7 @@ constructor(id: number, nombre: string, apellido1: string, apellido2:string, eda
     this._seguro = seguro;
     this._telefono = telefono;
     this._dolencia = dolencia;
+    this._tipo = tipo;
     this._preciobase = preciobase;
     }
 get id(){
@@ -49,6 +51,9 @@ get telefono(){
 get dolencia(){
     return this._dolencia;
 }
+get tipo(){
+    return this._tipo;
+}
 get preciobase(){
     return this._preciobase;
 }
@@ -63,6 +68,6 @@ get preciobase(){
         return pago
     }
     todo() {
-        return `id: ${this._id},Nombre${this._nombre},Apellido1${this._apellido1},Apellido2${this._apellido2},Edad${this._edad}, DNI${this._dni},Seguro${this._seguro},Telefono${this._telefono},Dolencia${this._dolencia}, Precio base: ${this._preciobase}`
+        return `id: ${this._id},Nombre${this._nombre},Apellido1${this._apellido1},Apellido2${this._apellido2},Edad${this._edad}, DNI${this._dni},Seguro${this._seguro},Telefono${this._telefono},Dolencia${this._dolencia},Tipo${this._tipo},Precio base: ${this._preciobase}`
     }
 }

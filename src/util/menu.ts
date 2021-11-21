@@ -28,11 +28,3 @@ export let emplear = async () => {
     menu3 = parseInt(await leerTeclado('Opción: '))
     return menu3
 }
-export let calcular = async () => {
-    let menu4: number
-    console.log('1.-Calcular Salarios')
-    console.log('2.-Calcular Ganancias')
-    console.log('3.-Salir')
-    menu4 = parseInt(await leerTeclado('Opción: '))
-    return menu4
-}

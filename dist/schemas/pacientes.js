@@ -30,6 +30,9 @@ const pacienteSchema = new mongoose_1.Schema({
     _dolencia: {
         type: String
     },
+    _tipo: {
+        type: String
+    },
     _preciobase: {
         type: Number
     },

@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Administrativo = void 0;
 const empleados_1 = require("./empleados");
 class Administrativo extends empleados_1.Empleado {
-    constructor(idemp, nombreemp, apellido, especialidad, contacto, idpaciente, sueldo, segundoIdioma) {
-        super(idemp, nombreemp, apellido, contacto, idpaciente, sueldo);
+    constructor(id, nombreemp, apellido, contacto, puesto, segundoIdioma, sueldo) {
+        super(id, nombreemp, apellido, contacto, puesto, sueldo);
         this._segundoIdioma = segundoIdioma;
     }
     get idioma() {
